@@ -4,6 +4,8 @@
 }
 body{
     background-color: rgb(224, 234, 245);
+    overflow-x: hidden;
+
 }
 .nav_bg{
     background-color: #212529;
@@ -127,7 +129,7 @@ body{
     transition: all .3s;
 }
 .card img{
-    height: 30vmin;
+    height: 25vmin;
     width: 45vmin;
 }
 .card:hover{
@@ -150,4 +152,185 @@ body{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+@media (max-width: 990px){
+    .navbar-brand h3{
+        margin:0px;
+    }
+    .box2 img{
+        top: 6.5vmin;
+        width: 107vmin;
+    }
+    @keyframes box21{
+        0%{
+            top: 6.5vmin;
+        }
+        50%{
+            top: 5.4vmin;
+        }
+        100%{
+            top: 6.5vmin;
+        }
+    }
+    .btn1{
+        width: auto;
+        padding: 4px 24px 4px 23px;
+    }
+    .box1{
+        top: 70vh;
+    }
+    .card{
+        width: 40vmin;
+        height: 52vmin;
+    }
+    .card img{
+        width: 40vmin;
+    }
+    .box22 img{
+        width: 70%;
+        top: 16.9vmin;
+        right: 15vmin;
+        animation: box23 2s linear infinite alternate-reverse;
+    }
+    @keyframes box23{
+        0%{
+            top: 16.9vmin;
+        }
+        50%{
+            top: 15.8vmin;
+        }
+        100%{
+            top: 16.9vmin;
+        }
+    }
+    .con1{
+        width: 40%;
+        padding-left: 0vmin;
+    }
+    .con1 img{
+        width: 110%;
+    }
+}
+@media (max-width: 617px){
+    .box2 img{
+        top: 9.5vmin;
+        width: 121vmin;
+    }
+    @keyframes box21{
+        0%{
+            top: 9.5vmin;
+        }
+        50%{
+            top: 8.4vmin;
+        }
+        100%{
+            top: 9.5vmin;
+        }
+    }
+    .card{
+        width: 38vmin;
+        height: 62vmin;
+    }
+    .card img{
+        width: 38vmin;
+    }
+    .box22 img{
+        width: 92%;
+        right: 4vmin;
+    }
+    .con{
+        flex-direction: column;
+    }
+    .con1{
+        width: 48%;
+    }
+    .con2{
+        width: 91%;
+        padding-left: 2vmin;
+        margin-top: 5vmin;
+    }
+}
+@media (max-width: 500px){
+    .box2 img{
+        top: 11.5vmin;
+        width: 167vmin;
+        right: -30vmin;
+    }
+    @keyframes box21{
+        0%{
+            top: 11.5vmin;
+        }
+        50%{
+            top: 10.4vmin;
+        }
+        100%{
+            top: 11.5vmin;
+        }
+    }
+    .box1 h1{
+        font-size: calc(1.075rem + 1.5vw);;
+    }
+    .box12 h1{
+        font-size: calc(1.075rem + 1.5vw);;
+    }
+    .btn1{
+        font-size: 17px;
+    }
+    .card{
+        width: 72vmin;
+        height: 81vmin;
+    }
+    .card img{
+        width: 72vmin;
+        height: 39vmin;
+    }
+    .box12{
+        top: 55vh;
+    }
+}
+@media (max-width: 390px){
+    @keyframes box21{
+        0%{
+            top: 11.5vmin;
+        }
+        50%{
+            top: 9.9vmin;
+        }
+        100%{
+            top: 11.5vmin;
+        }
+    }
+    @keyframes box23{
+        0%{
+            top: 27vmin;
+        }
+        50%{
+            top: 25.5vmin;
+        }
+        100%{
+            top: 27vmin;
+        }
+    }
+    .card{
+        height: 114vmin;
+    }
+    .card img{
+        height: 48vmin;
+    }
+    .box1{
+        top: 54vh;
+    }
+    .box22 img{
+        top: 27vmin;
+        animation: box23 2s linear infinite alternate-reverse;
+    }
+    .box12{
+        top: 50vh;
+    }
+    .con1{
+        width: 54%;
+    }
+    .foot2{
+        text-align: left;
+    }
 }

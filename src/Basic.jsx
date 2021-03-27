@@ -6,7 +6,7 @@ function Basic(props) {
     return (
         <>
             <Footer cn='foot2'/>
-            <div className="box1">
+            <div className={props.cn1} >
                 <h1>{props.head1}<span className="h1">{props.head2}</span></h1>
                 <p>{props.para}</p>
                 <NavLink to={props.to} className="btn1">{props.btxt}</NavLink>
