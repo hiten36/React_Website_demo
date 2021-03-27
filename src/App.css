@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: rgb(224, 234, 245);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav_bg{
+    background-color: #212529;
+    z-index: 10;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#root{
+    position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.navbar-brand h3{
+    color: orange;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand h3:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: rgb(255, 193, 79);
+    text-underline-position: under;
+}
+.nav-link p{
+    color: orange;
+    font-size: 17px;
+}
+.nav-link p:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: rgb(255, 193, 79);
+    text-underline-position: under;
+}
+.box1{
+    z-index: 2;
+    position: absolute;
+    top: 57vmin;
+    left: 5vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box2{
+    width: 40%;
+}
+.box2 img{
+    width: 75%;
+    top: 8.9vmin;
+    right: 0vmin;
+    z-index: -1;
+    position: absolute;
+    animation: box21 2s linear infinite alternate-reverse;
+}
+.box22 img{
+    width: 62%;
+    top: 8.9vmin;
+    right: 1vmin;
+    z-index: -1;
+    position: absolute;
+    animation: box21 2s linear infinite alternate-reverse;
+}
+.h1{
+    color: blueviolet;
+}
+.btn1{
+    border-radius: 22px;
+    font-size: 20px;
+    background-color: aquamarine;
+    color: black;
+    padding: 4px 20px 4px 27px;
+    width: 25%;
+    border: none;
+    margin: auto;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn1:hover{
+    border: 2px solid blue;
+    color: black;
+}
+@keyframes box21{
+    0%{
+        top: 8.9vmin;
+    }
+    50%{
+        top: 7.8vmin;
+    }
+    100%{
+        top: 8.9vmin;
+    }
+}
+.con{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vmin;
+}
+.con1{
+    width: 30%;
+    padding-left: 3vmin;
+}
+.con2{
+    width: 56%;
+    padding-left: 12vmin;
+}
+.con_form label{
+    margin: 7px 0px;
+}
+.con_form input{
+    margin: 2px 0px;
+}
+.card_box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    justify-content: center;
+}
+.card{
+    width: 45vmin;
+    margin: 20px;
+    height: 48vmin;
+    text-align: center;
+    box-shadow: 0 0 11px rgba(33,33,33,.4); 
+    transition: all .3s;
+}
+.card img{
+    height: 30vmin;
+    width: 45vmin;
+}
+.card:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.7);
+    -webkit-font-smoothing: subpixel-antialiased; 
+    transform: perspective(1px) scale(1.01);
+}
+.foot1{
+    text-align: center;
+    background-color: azure;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.foot2{
+    text-align: center;
+    background-color: azure;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
