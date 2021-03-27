@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Footer from './Footer';
+import i3 from '../src/images/i3.svg';
 
 function Contact() {
     let [s1,s2]=useState({
@@ -34,7 +35,7 @@ function Contact() {
             <Footer cn='foot2' />
             <div className='con'>
                 <div className='con1'>
-                    <img src="i3.svg" alt="image" />
+                    <img src={i3} alt="image" />
                 </div>
                 <div className="con2">
                     <h2>Contact Us!</h2>
